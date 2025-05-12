@@ -1,235 +1,243 @@
 # 📱 CryptoApp - Real Estate Crypto Viewer
 
-Aplicación móvil desarrollada en **React Native con TypeScript**, diseñada para listar criptomonedas, mostrar su valor en **USD**, aplicar filtros y mostrar detalles. Compatible con **Android e iOS**.
+Mobile application developed in **React Native with TypeScript**, designed to list cryptocurrencies, show their value in **USD**, apply filters, and display details. Compatible with **Android and iOS**.
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- 🔍 Búsqueda y filtrado de criptomonedas por nombre.
-- 💰 Conversión directa de valores a USD.
-- 📄 Vista de detalle de cada criptomoneda.
-- 🧩 Estructura basada en **Programación Orientada a Objetos (OOP)**.
-- 📱 Compatible con Android e iOS.
+- 🔍 Search and filter cryptocurrencies by name.
+- 💰 Direct value conversion to USD.
+- 📄 Detail view for each cryptocurrency.
+- 🧩 Structure based on **Object-Oriented Programming (OOP)**.
+- 📱 Compatible with Android and iOS.
 
 ---
 
-## 🛠️ Arquitectura
+## 🛠️ Architecture
 
-El proyecto sigue una arquitectura modular con separación de responsabilidades:
-```bash Copiar Editar
+The project follows a modular architecture with separation of concerns:
+```bash
     CryptoApp/
     └── src/
-        ├── api/ # Servicios HTTP
-        ├── components/ # Componentes reutilizables
-        ├── models/ # Interfaces y clases OOP para datos
-        ├── screens/ # Vistas principales (Home, Details)
-        ├── navigation/ # Navegación (Stack)
-        ├── utils/ # Funciones utilitarias
-        ├── services/ # Servicios de consumo interno
-    └── App.tsx # Punto de entrada principal
+        ├── api/           # HTTP services
+        ├── components/    # Reusable components
+        ├── models/        # OOP interfaces and classes for data
+        ├── screens/       # Main views (Home, Details)
+        ├── navigation/    # Stack navigation
+        ├── utils/         # Utility functions
+        ├── services/      # Internal services
+    └── App.tsx            # Main entry point
 ```
-
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+## ⚙️ Technologies Used
 
 - **React Native**
 - **TypeScript**
-- **Axios** (para conexión a la API de [Coinlore](https://www.coinlore.com/cryptocurrency-data-api))
+- **Axios** (for API connection to [Coinlore](https://www.coinlore.com/cryptocurrency-data-api))
 - **React Navigation**
-- **Styled Components** o **StyleSheet**
-- **OOP Patterns** con clases e interfaces
-- **Jest** (opcional, para pruebas unitarias)
+- **Styled Components** or **StyleSheet**
+- **OOP Patterns** using classes and interfaces
+- **Jest** (optional, for unit testing)
 
 ---
 
-## 🧪 Criterios de Evaluación Aplicados
+## 🧪 Applied Evaluation Criteria
 
-| Criterio         | Aplicación                           |
-|------------------|---------------------------------------|
-| Arquitectura     | Basada en componentes, modular        |
-| Estructura       | Limpia, con separación por dominios   |
-| Documentación    | Este README y comentarios inline      |
-| Buenas prácticas | Tipado estricto, código limpio        |
-| Rendimiento      | Optimizado con FlatList y memoización |
-| Pruebas          | (Opcional) Pruebas básicas con Jest   |
+| Criterion         | Application                             |
+|------------------|------------------------------------------|
+| Architecture     | Component-based, modular                 |
+| Structure        | Clean, with domain separation            |
+| Documentation    | This README and inline comments          |
+| Best Practices   | Strict typing, clean code                |
+| Performance      | Optimized with FlatList and memoization |
+| Testing          | (Optional) Basic tests with Jest         |
 
 ---
 
-## 📦 Instalación y ejecución
+## 📦 Installation and Execution
 
-### Requisitos previos
+### Prerequisites
 
 - Node.js >= 18
-- npm o yarn
-- Android Studio (para emulador)
-- Xcode (solo en Mac, para iOS)
-- WebStorm, Visual Studio Code o Android Studio
+- npm or yarn
+- Android Studio (for emulator)
+- Xcode (Mac only, for iOS)
+- WebStorm, Visual Studio Code or Android Studio
 
 ---
 
-### 📁 1. Clonar el proyecto
+### 📁 1. Clone the project
 
-```bash Copiar Editar
-  https://github.com/tuusuario/CryptoApp.git
+```bash
+  git clone https://github.com/youruser/CryptoApp.git
 ```
+
 ---
 
-### 📦 2. Instalar dependencias
+### 📦 2. Install dependencies
 
-Si usa npm
-```bash Copiar Editar
+If using npm:
+```bash
   npm install
 ```
-Si usa yarn
 
-```bash Copiar Editar
-  yarn install
+If using yarn:
+```bash
+    yarn install
 ```
----
-### 📲 3. Preparar entorno Android
-En Windows:
-Abre Android Studio.
-
-Instala el SDK Manager > Android SDK Platform 33 o superior.
-
-En AVD Manager, crea un emulador (Pixel 5, API 33 recomendado).
-
-Asegúrate de tener configurada la variable de entorno ANDROID_HOME:
-
-Ruta típica: C:\Users\TU_USUARIO\AppData\Local\Android\Sdk
-
-En Mac:
-Sigue los mismos pasos desde Android Studio.
 
 ---
-### ▶️ 4. Ejecutar en Android (desde consola)
-```bash Copiar Editar
-  npx react-native run-android
+
+### 📲 3. Set up Android environment
+
+On Windows:
+- Open Android Studio.
+- Install SDK Manager > Android SDK Platform 33 or higher.
+- In AVD Manager, create an emulator (Pixel 5, API 33 recommended).
+- Set the ANDROID_HOME environment variable:
+    - Typical path: `C:\Users\YOUR_USER\AppData\Local\Android\Sdk`
+
+On Mac:
+- Follow the same steps via Android Studio.
+
+---
+
+### ▶️ 4. Run on Android (from terminal)
+
+```bash
+    npx react-native run-android
 ```
-Esto compilará e instalará la app en el emulador o dispositivo físico.
+
+This will build and install the app on the emulator or physical device.
 
 ---
-### ▶️ 5. Ejecutar en iOS (solo en Mac)
-```bash Copiar Editar
+
+### ▶️ 5. Run on iOS (Mac only)
+
+```bash
     cd ios
     pod install
     cd ..
     npx react-native run-ios
 ```
-Esto abrirá el simulador de iPhone y ejecutará la app.
 
-#### 🖥️ Alternativas con IDEs
-✅ Visual Studio Code
-Abre la carpeta del proyecto.
-
-Instala la extensión React Native Tools.
-
-Abre la terminal integrada (Ctrl + ñ).
-
-Ejecuta:
-
-```bash Copiar Editar
-  npx react-native start
-```
-En otra terminal:
-
-```bash Copiar Editar
-  npx react-native run-android
-```
-También puedes configurar launch.json para ejecutar con F5.
-
-#### ✅ WebStorm
-Abre el proyecto en WebStorm.
-
-Ve a Run > Edit Configurations.
-
-Agrega una configuración de tipo React Native:
-
-Script: run-android
-
-Working directory: raíz del proyecto
-
-Haz clic en Run ▶️.
-
-✅ Android Studio
-Abre solo la carpeta /android.
-
-Espera que sincronice Gradle.
-
-Selecciona el emulador o dispositivo físico.
-
-Haz clic en el botón Run 'app' (ícono verde ▶️).
+This will launch the iPhone simulator and run the app.
 
 ---
 
-## 📦 Generar APK (Android)
+#### 🖥️ IDE Alternatives
 
-Para generar un APK de producción firmado:
-
-### 1. Generar clave de firma
-
-Ejecuta en la terminal:
-
-```bash Copiar Editar
-  keytool -genkey -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-key-alias
+✅ Visual Studio Code:
+- Open the project folder.
+- Install the React Native Tools extension.
+- Open the integrated terminal (Ctrl + ñ).
+- Run:
+```bash
+    npx react-native start
 ```
-Esto te pedirá una contraseña y algunos datos. Guarda el archivo keystore.jks en la carpeta android/app.
----
-### 2. Configurar firma en android/gradle.properties
-Agrega (o edita) las siguientes líneas:
+- In another terminal:
+```bash
+    npx react-native run-android
+```
+- You can also configure `launch.json` to run with F5.
 
-properties
-```bash Copiar Editar
+✅ WebStorm:
+- Open the project in WebStorm.
+- Go to Run > Edit Configurations.
+- Add a React Native configuration:
+    - Script: run-android
+    - Working directory: project root
+- Click Run ▶️
+
+✅ Android Studio:
+- Open only the `/android` folder.
+- Wait for Gradle to sync.
+- Select the emulator or physical device.
+- Click the Run 'app' button (green ▶️ icon).
+
+---
+
+## 📦 Generate APK (Android)
+
+To generate a signed production APK:
+
+### 1. Generate a signing key
+
+Run in terminal:
+
+```bash
+    keytool -genkey -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-key-alias
+```
+
+This will prompt for a password and some info. Save the `keystore.jks` file in the `android/app` folder.
+
+---
+
+### 2. Configure signing in android/gradle.properties
+
+Add or edit the following lines:
+
+```properties
     MYAPP_UPLOAD_STORE_FILE=keystore.jks
     MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
-    MYAPP_UPLOAD_STORE_PASSWORD=tu_contraseña
-    MYAPP_UPLOAD_KEY_PASSWORD=tu_contraseña
+    MYAPP_UPLOAD_STORE_PASSWORD=your_password
+    MYAPP_UPLOAD_KEY_PASSWORD=your_password
 ```
+
 ---
-### 3. Editar android/app/build.gradle
-Busca la sección signingConfigs y reemplaza por:
 
-```groovy Copiar Editar
-    signingConfigs {
-        release {
-            storeFile file(MYAPP_UPLOAD_STORE_FILE)
-            storePassword MYAPP_UPLOAD_STORE_PASSWORD
-            keyAlias MYAPP_UPLOAD_KEY_ALIAS
-            keyPassword MYAPP_UPLOAD_KEY_PASSWORD
-        }
-    }
-```
-Y luego en buildTypes > release, agrega:
+### 3. Edit android/app/build.gradle
 
-```groovy Copiar Editar
-    buildTypes {
-        release {
-            signingConfig signingConfigs.release
-            shrinkResources true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
-        }
+Look for the `signingConfigs` section and replace with:
+
+```groovy
+signingConfigs {
+    release {
+        storeFile file(MYAPP_UPLOAD_STORE_FILE)
+        storePassword MYAPP_UPLOAD_STORE_PASSWORD
+        keyAlias MYAPP_UPLOAD_KEY_ALIAS
+        keyPassword MYAPP_UPLOAD_KEY_PASSWORD
     }
+}
 ```
+
+Then under `buildTypes > release`, add:
+
+```groovy
+buildTypes {
+    release {
+        signingConfig signingConfigs.release
+        shrinkResources true
+        minifyEnabled true
+        proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+    }
+}
+```
+
 ---
-### 4. Generar el APK
-Desde la raíz del proyecto:
 
-```bash Copiar Editar
+### 4. Generate the APK
+
+From the root of the project:
+
+```bash
     cd android
     ./gradlew assembleRelease
 ```
-En Windows:
 
-```bash Copiar Editar
+On Windows:
+
+```bash
   gradlew.bat assembleRelease
 ```
-El APK se generará en:
 
-```swift Copiar Editar
-    android/app/build/outputs/apk/release/app-release.apk
+The APK will be generated at:
+
+```bash
+  android/app/build/outputs/apk/release/app-release.apk
 ```
-Puedes copiar ese archivo y distribuirlo o subirlo a tiendas.
+
+You can copy this file and distribute it or upload it to app stores.
